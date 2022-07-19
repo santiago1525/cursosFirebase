@@ -1,0 +1,66 @@
+.footer-container {
+    background: var(--secundario);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    margin-top: 80px;
+    color: var(--white);
+}
+.list-container {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+/* REDES SOCIALES */
+.social-container {
+    list-style: none; 
+}
+.title {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.social-container li {
+    padding-bottom: 10px;
+}
+.social-container a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: var(--colorlettersec);
+    text-decoration: none;
+}
+.social-icon {
+    color: var(--white);
+    font-size: 16px;
+}
+
+/* POLITICA Y TERMINOS */
+.politics-container {
+    list-style: none;
+}
+.politics-link {
+    text-transform: capitalize;
+    color: var(--colorlettersec);
+    padding-bottom: 10px;
+}
+.derechos {
+    font-size: 14px;
+    color: var(--colorlettersec);
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+    .list-container {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        gap: 0;
+    }
+}

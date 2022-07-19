@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;800;900&family=Poppins:wght@400;500;600&family=Roboto:ital,wght@0,900;1,700;1,900&display=swap');
+:root {
+    --primario: #20ded3;
+    --primario-ligth: linear-gradient(61deg,#4defa7 1%,#20ded3 85%,#20ded3 90%) 0 0 /100% 100% no-repeat;
+    --secundario: rgb(2, 2, 26);
+    --active: rgb(1, 1, 16);
+    --activeBefore: rgb(3, 3, 74);
+    --white: #fff;
+    --dark: #000;
+    --darkness: #242529;
+    --colorlettersec: #f3f3f6bf;
+    --letter: #111427;
+}

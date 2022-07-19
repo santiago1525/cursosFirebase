@@ -1,0 +1,98 @@
+.profile-container {
+    background-color: var(--darkness);
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+}
+
+/* FORMULARIO */
+.profile-form-container {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    max-width: 100%;
+}
+.profile-container h1 {
+    color: var(--white);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    text-transform: capitalize;
+    padding: 30px 0;
+    text-align: center;
+    
+}
+.profile-form {
+    
+    color: var(--white);
+    border-radius: 20px;
+    padding: 55px 100px 20px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 30px 0;
+}
+.profile-form input {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 5px 20px;
+    background-color: #101011;
+    border: 2px solid var(--primario);
+    border-radius: 10px;
+    color: var(--white);
+}
+/* BOTONES */
+.buttons-profile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.button-profile {
+    padding: 6px 10px;
+    border-radius: 10px;
+    background: var(--primario-ligth);
+}
+
+/* IMAGEN */
+.profile-img-container {
+    display: flex;
+    background-image: url('../../images/profile.jpg');
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 150px;
+    background-size: cover;
+    background-position: start center;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 300px ) {
+    .profile-container h1 {
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+    }
+}   
+@media (max-width: 768px) {
+    .buttons-profile-container {
+        justify-content: space-around;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .profile-container {
+        justify-content: center;
+        align-items: center;
+    }
+    .profile-img-container {
+        display: none;
+    }
+    .form-container {
+        min-width: 32rem;
+        width: 20rem;
+    }
+}

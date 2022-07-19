@@ -1,0 +1,57 @@
+/* ARREGLOS AL MODAL */
+.modal-content {
+    background-color: var(--darkness);
+}
+.modal-content .modal-title {
+    color: var(--primario);
+}
+.modal-content  label {
+    color: var(--primario);
+}
+.modal-content input {
+    background-color: var(--dark);
+    border: 2px solid var(--primario);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: var(--white);
+}
+.modal-content .modal-footer button {
+    background: var(--primario-ligth);
+    color: var(--darkness);
+}
+
+/* FORMULARIO MODAL */
+.form-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-img-container{
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    margin: 20px 0;
+    position: relative;
+}
+.modal-img {
+    background: url('../../images/login.jpg');
+   
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px solid var(--primario);
+}
+.modal-img-icon {
+    position: absolute;
+    top: 45%;
+    left: 48%;
+    color: var(--white);
+    font-size: 25px;
+}
+.modal-img-container:hover {
+    filter: brightness(.8);
+    cursor: pointer;
+}

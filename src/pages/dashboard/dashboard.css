@@ -1,0 +1,133 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    background-color: #101011;
+}
+.dashboard-content {
+    width: 100%;
+    min-height: 100vh;
+}
+.dashboard-welcome {
+    color: var(--white);
+    font-size: 20px;
+    padding: 30px 40px;
+    text-align: center;
+    font-weight: 700;
+}
+.dashboard-welcome_icon {
+    color: var(--primario);
+    animation: rotation .5s linear infinite alternate;
+}
+
+
+/* SECTION VS */
+.dashboard-diference {
+    margin: 20px 10px 0 10px;
+    border-radius: 30px 30px 0 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+.vs {
+    color: var(--white);
+    font-style: italic;
+    font-size: 25px;
+    font-weight: bold;
+}
+.diference-card_front,
+.diference-card_back {
+    color: var(--white);
+    background-color: var(--darkness);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.diference-card_front h2,
+.diference-card_back h2 {
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.diference-icon {
+    font-size: 20px;
+    color: var(--primario);
+}
+.diference-card_front p,
+.diference-card_back p {
+    font-size: 15px;
+}
+.diference-link {
+    text-decoration: none;
+    color: var(--primario);
+    font-weight: 500;
+}
+.diference-link:hover {
+    color: var(--primario);
+    font-size: 18px;
+}
+
+
+/* MEDIA QUERIES */
+@media (min-width: 500px) {
+    .dashboard-container {
+        gap: 50px;
+    }
+    .dashboard-welcome {
+        font-size: 25px;
+    }
+
+    /* SECTION VS */
+    .dashboard-diference {
+        margin: 40px 10px 0 10px;
+        padding: 50px;
+    }
+    .diference-card_front h2,
+    .diference-card_back h2 {
+        font-size: 40px;
+    }
+    .diference-icon {
+        font-size: 40px;
+    }
+    .diference-card_front p,
+    .diference-card_back p {
+        font-size: 20px;
+    }
+}
+@media (min-width: 768px) {
+    .dashboard-container {
+        gap: 80px;
+    }
+}
+@media (min-width: 1200px) {
+    .dashboard-diference  {
+        flex-direction: row;
+    }
+    .diference-card_front p,
+    .diference-card_back p {
+        max-width: 400px;
+    }
+}
+
+/* ANIMACIONES */
+@keyframes rotation {
+    from {
+        transform: rotate(-90deg);
+    }
+    to {
+        transform: rotate(0);
+    }
+}

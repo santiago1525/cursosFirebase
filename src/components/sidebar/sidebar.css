@@ -1,0 +1,58 @@
+.sidebar-container .sidebar {
+    background-color: var(--secundario);
+    position: fixed;
+    z-index: 1040;
+    visibility: hidden;
+}
+.sidebar-container .sidebar .sidebar-icon-container {
+    margin-top: 25px;
+}
+.sidebar-container .sidebar .sidebar-icon{
+    font-size: 20px;
+}
+
+/* Arreglo sidebar */
+.sidebar-container .sidenav---sidenav-toggle---1KRjR {
+    margin-top: 20px;
+    height: 40px;
+    width: 50px;
+    visibility: visible;
+}
+.sidenav---expanded---1KdUL {
+    visibility: visible !important;
+}
+.sidenav---navicon---3gCRo {
+    width: 50px !important;
+}
+.sidebar-container .sidenav---sidenav---_2tBP {
+    min-width: 50px;
+}
+.sidebar-container .sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ- > .sidenav---navitem---9uL5T .sidenav---navicon---3gCRo {
+    margin-right: -2px;
+}
+.sidenav---selected---1EK3y {
+    border-left: 2px solid var(--primario) !important;
+}
+.sidenav---selected---1EK3y .sidebar-icon {
+    font-size: 28px !important;
+}
+@media (min-width: 500px) {
+    .sidebar-container .sidebar {
+        visibility: visible;
+    }
+    
+}
+@media (min-width: 768px) {
+    .sidebar-container .sidenav---sidenav-toggle---1KRjR {
+        margin-top: 0;
+        width: 80px;
+        height: 80px;
+    }
+    .sidebar-container .sidebar .sidebar-icon{
+        font-size: 22px;
+        width: 80px;
+    }
+    .sidebar-container .sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ- > .sidenav---navitem---9uL5T .sidenav---navicon---3gCRo {
+        margin-right: 10px;
+    }
+}
