@@ -23,7 +23,7 @@ const Form = ({ btnText, register }) => {
 
 
     if(correo === '' || contraseña === '') {
-      mostrarAlerta('🔔 Alguno de los campos está vacío 🔔')
+      mostrarAlerta('🔔 Alguno de los campos está vacío 🔔', '.form-alert-container')
     }
     else {
       /* Validacion Registro */

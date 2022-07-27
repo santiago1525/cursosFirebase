@@ -15,7 +15,7 @@ const Navegation = () => {
                 <Container fluid>
                     
                     {/* NAVBAR */}
-                    <Navbar.Brand href="#" className='nav-title'>React App <FaReact className='icon-nav'/></Navbar.Brand>
+                    <Navbar.Brand href="/" className='nav-title'>React App <FaReact className='icon-nav'/></Navbar.Brand>
                     <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`}><GiHamburgerMenu className='nav-icon'/></Navbar.Toggle>
 
                     {/* OFFCANVAS */}
@@ -32,9 +32,8 @@ const Navegation = () => {
                         
                         <Offcanvas.Body>
                             <Nav className="justify-content-end flex-grow-1 pe-3">
-                                <Link to='/home'><Nav.Link href="/home" className='nav-link'>Home</Nav.Link></Link>
-                                <Link to='/contact'><Nav.Link href="#action2" className='nav-link'>Contact</Nav.Link></Link>
-                                <Link to='/about'><Nav.Link href="#action3" className='nav-link'>About</Nav.Link></Link>
+                                <Link to='/'><Nav.Link href="/" className='nav-link'>Inicio</Nav.Link></Link>
+                                <Link to='/contact'><Nav.Link href="#action2" className='nav-link'>Contacto</Nav.Link></Link>
                                 <Button href='/login' className='btn-link btn-login'>Iniciar Sesion</Button>
                                 <Button href='/register' className='btn-link btn-register'>Registrarse</Button>
                             </Nav>

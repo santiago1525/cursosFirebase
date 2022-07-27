@@ -16,6 +16,7 @@ import { Route } from 'wouter';
 /* Firebase */
 import firebaseApp from './services/Firebase';
 import {getAuth, onAuthStateChanged} from 'firebase/auth'
+import Contact from './pages/contact/Contact';
 const auth = getAuth(firebaseApp)
 
 function App() {
@@ -61,6 +62,9 @@ function App() {
           <Route 
             path='/profile'
             component={CompleteProfile} />
+          <Route 
+            path='/contact'
+            component={Contact} />
         </>
         :
         <>
@@ -73,6 +77,9 @@ function App() {
         <Route 
           path='/register'
           component={Register} />
+        <Route 
+          path='/contact'
+          component={Contact} />
         </>
         
         }
